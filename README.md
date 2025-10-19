@@ -2,31 +2,57 @@
 
 [![Open in Hugging Face Spaces](https://img.shields.io/badge/🚀%20View%20Live%20Demo%20on%20Hugging%20Face-blue?style=for-the-badge&logo=huggingface)](https://huggingface.co/spaces/srodrift/FogFit)
 
-A weather-mood visualization app for San Francisco neighborhoods, built with FastAPI and deployed on Hugging Face Spaces.
-FogFit is a fun San Francisco micro-climate outfit recommender built with **FastAPI**, **Jinja2**, and **NOAA Weather API**.
+A San Francisco–themed weather and vibe visualization app built with **FastAPI**, **Jinja2**, and **Uvicorn**, deployed on **Hugging Face Spaces**.  
+🎶 Plays Tony Bennett’s *“I Left My Heart in San Francisco”* while showing live weather moods by neighborhood.
 
-It fetches live hourly forecasts by neighborhood and recommends layers you should wear — powered by real data, wrapped in foggy vibes, and optionally set to *“I Left My Heart in San Francisco”* 🎶.
+---
 
-## Features
-- Real-time weather from NOAA
-- 60+ San Francisco neighborhoods
-- Dynamic outfit suggestions
-- Background music and map-based navigation
-- Clean responsive interface
+## 🌤️ Overview
 
-## Tech Stack
-- **Python 3**
-- **FastAPI** for backend
-- **Jinja2** for templating
-- **HTTPX** for API calls
-- **Leaflet.js** + **OpenStreetMap** for map display
-- **HTML/CSS/JS** frontend
-- Hosted locally or deployable to Render / Vercel / Railway
+FogFit blends the **local spirit of San Francisco** with real-time weather updates to give each neighborhood its own vibe.  
+From **foggy Twin Peaks** to **sunny Mission District**, it’s a playful, ambient project that celebrates microclimates, art, and data.
 
-## Run locally
+---
+
+## 🏙️ Features
+
+- 🌡️ **Live weather data** using public APIs  
+- 🗺️ **Neighborhood-level mapping** — 70+ SF neighborhoods included  
+- 🎶 **Background soundtrack** (*“I Left My Heart in San Francisco”*)  
+- 🎨 **Golden Gate–themed background image**  
+- ⚡ **FastAPI + Jinja2** dynamic rendering  
+- ☁️ **Deployed on Hugging Face Spaces (Docker)**
+
+---
+
+## 🧠 Tech Stack
+
+| Category | Tools |
+|-----------|-------|
+| Backend | [FastAPI](https://fastapi.tiangolo.com/), [Uvicorn](https://www.uvicorn.org/) |
+| Frontend | HTML, CSS, Jinja2 templates |
+| Deployment | [Hugging Face Spaces](https://huggingface.co/spaces) (Docker) |
+| Version Control | Git + GitHub |
+| Media | MP3 (background music), static images |
+| Language | Python 3.9+ |
+
+---
+
+## 🗺️ Neighborhood Coverage
+
+Includes **every San Francisco neighborhood**, from the waterfront to the hills —  
+like *Laurel Heights*, *Excelsior*, *Visitacion Valley*, *Red Rock Hill*, and more.
+
+---
+
+## 🚀 Run Locally
+
+Clone and run FogFit on your own machine:
+
 ```bash
-python -m venv .venv
+git clone https://github.com/srodrift/FogFit.git
+cd FogFit
+python3 -m venv .venv
 source .venv/bin/activate
-pip install fastapi "uvicorn[standard]" httpx jinja2 tzdata
-uvicorn app.main:app --reload --port 8000
-# FogFit
+pip install -r requirements.txt
+uvicorn app.main:app --reload
