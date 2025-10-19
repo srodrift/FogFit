@@ -11,7 +11,7 @@ Built with **FastAPI**, **Jinja2**, and **Uvicorn**, it captures the city’s fa
 
 ## 🌤️ Project Story
 
-I created FogFit as my first *“vibecoding”* project — a way to turn code into emotion.  
+I created FogFit as my first *“vibecoding”* project — a way to turn code into emotion for the Daytona's first Hacksprint that happened on October 18th, 2025 in San Francisco  
 San Francisco’s weather changes every few blocks, and I wanted an app that mirrors that magic: from fog-washed Twin Peaks to sunny Dolores Park.
 
 This project helped me strengthen my skills in **API integration**, **asynchronous web servers**, and **Docker-based deployment**.  
