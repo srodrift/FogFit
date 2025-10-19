@@ -1,5 +1,8 @@
 # 🌁 FogFit
 
+[![Open in Hugging Face Spaces](https://img.shields.io/badge/🚀%20View%20Live%20Demo%20on%20Hugging%20Face-blue?style=for-the-badge&logo=huggingface)](https://huggingface.co/spaces/srodrift/FogFit)
+
+A weather-mood visualization app for San Francisco neighborhoods, built with FastAPI and deployed on Hugging Face Spaces.
 FogFit is a fun San Francisco micro-climate outfit recommender built with **FastAPI**, **Jinja2**, and **NOAA Weather API**.
 
 It fetches live hourly forecasts by neighborhood and recommends layers you should wear — powered by real data, wrapped in foggy vibes, and optionally set to *“I Left My Heart in San Francisco”* 🎶.
